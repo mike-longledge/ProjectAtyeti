@@ -6,7 +6,8 @@ resource "google_cloud_run_service" "run_primary_1" {
   template {
     spec {
       containers {
-        image = "gcr.io/google-samples/hello-app:1.0"
+        #image = "gcr.io/google-samples/hello-app:1.0"
+        image = "us-central1-docker.pkg.dev/serviceswithprimarysecondary/my-ar-repo/myimage:myapp"
       }
     }
   }
