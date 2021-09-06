@@ -16,6 +16,7 @@ function check_health () {
 function round_robin() {
    curl -f ${endpoint[${1}-1-url]}
    curl -f ${endpoint[${1}-2-url]}
+   echo
 }
 
 while true; do
@@ -26,5 +27,5 @@ while true; do
  else 
   printf '\n\n\n====> Atyeti: Both Primary & Secondary Regions are Down!'
  fi
- sleep 5
+ sleep 2
 done
