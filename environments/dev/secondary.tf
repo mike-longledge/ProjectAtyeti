@@ -6,7 +6,7 @@ resource "google_cloud_run_service" "run_secondary_1" {
   template {
     spec {
       containers {
-        image = "gcr.io/google-samples/hello-app:1.0"
+        image = "us-central1-docker.pkg.dev/serviceswithprimarysecondary/project-atyeti/secondary-1:v1"
       }
     }
   }
@@ -41,7 +41,7 @@ resource "google_cloud_run_service" "run_secondary_2" {
   template {
     spec {
       containers {
-        image = "gcr.io/google-samples/hello-app:1.0"
+        image = "us-central1-docker.pkg.dev/serviceswithprimarysecondary/project-atyeti/secondary-2:v1"
       }
     }
   }

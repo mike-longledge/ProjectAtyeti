@@ -24,7 +24,7 @@ while true; do
  elif [[ $(check_health secondary) == '0' ]]; then
   round_robin secondary
  else 
-  echo "Atyeti: Both Region Down"
+  printf '\n\n\n====> Atyeti: Both Primary & Secondary Regions are Down!'
  fi
  sleep 5
 done

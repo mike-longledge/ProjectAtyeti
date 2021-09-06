@@ -43,7 +43,7 @@ func main() {
 func handler(w http.ResponseWriter, r *http.Request) {
 	name := os.Getenv("NAME")
 	if name == "" {
-		name = "primary-1"
+		name = "secondary-1"
 	}
 	fmt.Fprintf(w, "====> Atyeti:  %s is up!\n", name)
 }
